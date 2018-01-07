@@ -12,5 +12,13 @@ namespace ForLoops
             }
             Console.ReadLine();
         }
+        static void HelloWorld(string[] args)
+        {
+            var a = "Hello ";
+            var b = "World!";
+            var c = a + b;
+            Console.WriteLine(c);
+            Console.ReadLine();
+        }
     }
 }
