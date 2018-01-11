@@ -2,17 +2,21 @@
 
 namespace ForLoops
 {
-    class Program
+    class Program // Class
     {
-        static void Main(string[] args)
+        static void Main(string[] args) // Methode
         {
             for (int i = 1; i <= 10; i++)
             {
                 Console.WriteLine(i);
             }
-            Console.ReadLine();
+            HelloWorld(); // Voer de methode uit
+            HelloWorld(); // Voer de methode uit
+            var helloWorld = new HelloWorld(); // Instantieer de andere klasse
+            helloWorld.SayHello(); // Voer de methode uit
         }
-        static void HelloWorld(string[] args)
+
+        static void HelloWorld() // Methode
         {
             var a = "Hello ";
             var b = "World!";
@@ -21,4 +25,20 @@ namespace ForLoops
             Console.ReadLine();
         }
     }
+
+    public class HelloWorld // Class
+    {
+        public HelloWorld() // Constructor
+        {
+            
+        }
+
+        public string a { get; set; } // Property
+
+        public void SayHello() // Methode
+        {
+            Console.WriteLine("Hello");
+        }
+    }
+
 }
