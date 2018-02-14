@@ -18,7 +18,6 @@ namespace ForLoops
             HelloWorld(); // Voer de methode uit
             var helloWorld = new HelloWorld(); // Instantieer de andere klasse
             helloWorld.SayHello(); // Voer de methode uit
-            ProgramFlow.Looping();
         }
 
         static void HelloWorld() // Methode
@@ -46,20 +45,21 @@ namespace ForLoops
         }
     }
 }
+
 namespace ProgramFlow
 {
-    public class Looping
+    class Looping
     {
-        public static 
+        public static Num()
         {
             for (int num = 0; num > 11; num++)
             {
             Console.WriteLine(num);
             }
-        }   
-        public static 
+        }
+        public static Count(int count); 
         {
-            int [] countless = {231, 385, 345, 898, 1001} 
+            int[] countless = { 231, 385, 395, 898, 1001 }; 
             foreach(int count in countless)
             {
             Console.WriteLine(count);
