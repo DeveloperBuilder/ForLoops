@@ -10,9 +10,9 @@ namespace ForLoops
             num5 = 34 % 5;
             num5 = num5 + 6;
             Console.WriteLine("The outcome of num5 is {0} ", num5);
-            for (int i = 1; i <= 10; i++)
+            for (int i = 2; i <= 6; i = i + 2)
             {
-                Console.WriteLine(i);
+                Console.WriteLine("The outcome of i is {0} ", i + 2);
             }
             HelloWorld(); // Voer de methode uit
             HelloWorld(); // Voer de methode uit
@@ -20,7 +20,7 @@ namespace ForLoops
             helloWorld.SayHello(); // Voer de methode uit
         }
 
-        static void HelloWorld() // Methode
+        static void HelloWorld() // Method
         {
             var a = "Hello ";
             var b = "World!";
@@ -56,10 +56,12 @@ namespace ProgramFlow
             {
             Console.WriteLine(num);
             }
+            Console.ReadLine();
         }
-        public static Count(int count); 
+
+        public static Count(int count);
         {
-            int[] countless = { 231, 385, 395, 898, 1001 }; 
+            int[] countless = { 231, 385, 395, 898, 1001 };
             foreach(int count in countless)
             {
             Console.WriteLine(count);
