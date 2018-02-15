@@ -12,7 +12,7 @@ namespace ForLoops
             Console.WriteLine("The outcome of num5 is {0} ", num5);
             for (int i = 2; i <= 6; i = i + 2)
             {
-                Console.WriteLine("The outcome of i is {0} ", i + 2);
+                Console.WriteLine("The outcome of i is " +  (i + 2));
             }
             HelloWorld(); // Voer de methode uit
             HelloWorld(); // Voer de methode uit
@@ -54,7 +54,7 @@ namespace ProgramFlow
         {
             for (int num = 0; num > 11; num++)
             {
-            Console.WriteLine(num);
+                Console.WriteLine(num);
             }
             Console.ReadLine();
         }
@@ -69,3 +69,4 @@ namespace ProgramFlow
         }
     }
 }
+
