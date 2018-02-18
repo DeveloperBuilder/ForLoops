@@ -4,7 +4,7 @@ namespace ForLoops
 {
     class Program // Class
     {
-        public static void Main(string[] args) // Methode
+        static void Main(string[] args) // Methode
         {
             int num5 = -340;
             num5 = 34 % 5;
@@ -27,7 +27,7 @@ namespace ForLoops
             var a = "Hello ";
             var b = "World!";
             var c = a + b;
-            Console.WriteLine(c);
+            Console.WriteLine("Using method HelloWorld: "+ c);
             Console.ReadLine();
         }
     }
@@ -43,7 +43,7 @@ namespace ForLoops
 
         public void SayHello() // Methode en/of declare a method
         {
-            Console.WriteLine("Hello");
+            Console.WriteLine("Using method SayHello: " + "Hello");
         }
 
     }
