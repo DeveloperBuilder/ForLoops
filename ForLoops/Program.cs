@@ -60,10 +60,10 @@ namespace ProgramFlow
             Console.ReadLine();
         }
 
-        public static void Count();
+        public static void Count()
         {
             int[] countless = { 231, 385, 395, 898, 1001 };
-            foreach(int count in Countless)
+            foreach(int count in countless)
             {
             Console.WriteLine(count);
             }
