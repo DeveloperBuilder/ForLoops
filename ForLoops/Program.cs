@@ -57,7 +57,7 @@ namespace ProgramFlow
         {
             for (int num = 0; num > 11; num++)
             {
-            Console.WriteLine(num);
+            Console.WriteLine("The outcome of forloop is " + (num));
             }
             Console.ReadLine();
         }
@@ -67,7 +67,7 @@ namespace ProgramFlow
             int[] countless = { 231, 385, 395, 898, 1001 };
             foreach(int count in countless)
             {
-            Console.WriteLine(count);
+            Console.WriteLine("The outcome of foreach is " + (count));
             }
             Console.ReadLine();
         }
