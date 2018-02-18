@@ -4,7 +4,7 @@ namespace ForLoops
 {
     class Program // Class
     {
-        static void Main(string[] args) // Methode
+        public static void Main(string[] args) // Methode
         {
             int num5 = -340;
             num5 = 34 % 5;
@@ -12,12 +12,12 @@ namespace ForLoops
             Console.WriteLine("The outcome of num5 is {0} ", num5);
             for (int i = 2; i <= 6; i = i + 2)
             {
-                Console.WriteLine("The outcome of i is " +  (i + 2));
+                Console.WriteLine("The outcome of i is " + (i + 2));
             }
-            HelloWorld(); // Voer de methode uit
-            HelloWorld(); // Voer de methode uit
+            HelloWorld(); // Voer de methode uit en/of invoke the method
+            HelloWorld(); // Voer de methode uit en/of invoke the method
             var helloWorld = new HelloWorld(); // Instantieer de andere klasse
-            helloWorld.SayHello(); // Voer de methode uit
+            helloWorld.SayHello(); // Voer de methode uit en/of invoke the method
         }
 
         static void HelloWorld() // Method
@@ -34,15 +34,16 @@ namespace ForLoops
     {
         public HelloWorld() // Constructor
         {
-            
+
         }
 
         public string a { get; set; } // Property
 
-        public void SayHello() // Methode
+        public void SayHello() // Methode en/of declare a method
         {
             Console.WriteLine("Hello");
         }
+
     }
 }
 
@@ -50,19 +51,19 @@ namespace ProgramFlow
 {
     class Looping
     {
-        public static Num()
+        public static void Num()
         {
             for (int num = 0; num > 11; num++)
             {
-                Console.WriteLine(num);
+            Console.WriteLine(num);
             }
             Console.ReadLine();
         }
 
-        public static Count(int count);
+        public static void Count();
         {
             int[] countless = { 231, 385, 395, 898, 1001 };
-            foreach(int count in countless)
+            foreach(int count in Countless)
             {
             Console.WriteLine(count);
             }
