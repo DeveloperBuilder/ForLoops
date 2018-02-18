@@ -18,6 +18,8 @@ namespace ForLoops
             HelloWorld(); // Voer de methode uit en/of invoke the method
             var helloWorld = new HelloWorld(); // Instantieer de andere klasse
             helloWorld.SayHello(); // Voer de methode uit en/of invoke the method
+            ProgramFlow.Looping.Num();
+            ProgramFlow.Looping.Count();
         }
 
         static void HelloWorld() // Method
@@ -67,6 +69,7 @@ namespace ProgramFlow
             {
             Console.WriteLine(count);
             }
+            Console.ReadLine();
         }
     }
 }
