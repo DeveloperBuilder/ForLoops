@@ -14,8 +14,8 @@ namespace ForLoops
             {
                 Console.WriteLine("The outcome of i is " + (i + 2));
             }
-            HelloWorld(); // Voer de methode uit en/of invoke the method
-            HelloWorld(); // Voer de methode uit en/of invoke the method
+            Person(); // Voer de methode uit en/of invoke the method
+            Person(); // Voer de methode uit en/of invoke the method
             var helloWorld = new HelloWorld(); // Instantieer de andere klasse
             helloWorld.SayHello(); // Voer de methode uit en/of invoke the method
             ProgramFlow.Looping.Num(); // invoke the method
@@ -32,16 +32,42 @@ namespace ForLoops
         }
     }
 
-    public class HelloWorld // Class
+    class Person // Class
     {
-        public HelloWorld() // Constructor
-        {
+        //Properties
+        String name;
+        int age;
 
+        // constructor with name and age parameters
+        public Person(String name, int age) // Constructor
+        {
+            this.name = name;
+            this.age = age;
         }
 
-        ~HelloWorld()
+        ~Person()
         {
-                            // deconstructor body
+            this.name = null;       // deconstructor body
+            this.age = 0;
+        }
+
+        // appends String to the name
+        public void ChangeName()
+        {
+            name = name + ", the rockstar!";
+        }
+
+        // display the new name and age values
+        public void Display()
+        {
+            Console.WriteLine("Your new name is: ", name);
+            Console.WriteLine("YOur new age is: ", age);
+        }
+
+        // change the age
+        public void ChangeAge()
+        {
+            age = age + 100;
         }
 
         public string a { get; set; } // Property
