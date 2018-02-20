@@ -14,10 +14,8 @@ namespace ForLoops
             {
                 Console.WriteLine("The outcome of i is " + (i + 2));
             }
-            Person(); // Voer de methode uit en/of invoke the method
-            Person(); // Voer de methode uit en/of invoke the method
-            var helloWorld = new HelloWorld(); // Instantieer de andere klasse
-            helloWorld.SayHello(); // Voer de methode uit en/of invoke the method
+            Person person = new Person();
+            person.SayHello();
             ProgramFlow.Looping.Num(); // invoke the method
             ProgramFlow.Looping.Count(); // invoke the method
         }
@@ -39,7 +37,7 @@ namespace ForLoops
         int age;
 
         // constructor with name and age parameters
-        public Person(String name, int age) // Constructor
+        public void Person() // Constructor
         {
             this.name = name;
             this.age = age;
