@@ -14,9 +14,9 @@ namespace ForLoops
             {
                 Console.WriteLine("The outcome of i is " + (i + 2));
             }
-            Person person = new Person();
-            person.SayHello();
-            person.Display();
+            Person person = new Person(); // create an object
+            person.SayHello(); // invoke the method
+            person.Display(); // invoke the method
             ProgramFlow.Looping.Num(); // invoke the method
             ProgramFlow.Looping.Count(); // invoke the method
         }
@@ -38,7 +38,7 @@ namespace ForLoops
         int age;
 
         // constructor with name and age parameters
-        public Person() // Constructor
+        public Person(String name, int age) // Constructor
         {
             this.name = name;
             this.age = age;
@@ -56,17 +56,17 @@ namespace ForLoops
             name = name + ", the rockstar!";
         }
 
-        // display the new name and age values
-        public void Display()
-        {
-            Console.WriteLine("Your new name is: ", name);
-            Console.WriteLine("YOur new age is: ", age);
-        }
-
         // change the age
         public void ChangeAge()
         {
             age = age + 100;
+        }
+
+        // display the new name and age values
+        public void Display()
+        {
+            Console.WriteLine("Your new name is: ", name);
+            Console.WriteLine("Your new age is: " + "\n", age);
         }
 
         public string a { get; set; } // Property
