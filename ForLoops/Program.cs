@@ -16,6 +16,7 @@ namespace ForLoops
             }
             Person person = new Person();
             person.SayHello();
+            person.Display();
             ProgramFlow.Looping.Num(); // invoke the method
             ProgramFlow.Looping.Count(); // invoke the method
         }
