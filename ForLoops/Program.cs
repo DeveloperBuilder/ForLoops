@@ -37,7 +37,7 @@ namespace ForLoops
         int age;
 
         // constructor with name and age parameters
-        public void Person() // Constructor
+        public Person() // Constructor
         {
             this.name = name;
             this.age = age;
@@ -72,7 +72,7 @@ namespace ForLoops
 
         public void SayHello() // Methode en/of declare a method
         {
-            Console.WriteLine("Using method SayHello: " + "Hello" + "\n");
+            Console.WriteLine("\n" + "Using method SayHello: " + "Hello" + "\n");
         }
 
     }
