@@ -69,8 +69,8 @@ namespace ForLoops
         // display the new name and age values
         public void Display()
         {
-            Console.WriteLine("Your new name is: " + name);
-            Console.WriteLine("Your new age is: " + age + "\n" );
+            Console.WriteLine($"Your new name is: {name}");
+            Console.WriteLine($"Your new age is: {age}" + "\n" );
         }
 
     public string a { get; set; } // Property
