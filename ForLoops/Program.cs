@@ -14,8 +14,12 @@ namespace ForLoops
             {
                 Console.WriteLine("The outcome of i is " + (i + 2));
             }
-            Person person = new Person(); // create an object
+            String name = "John";
+            int age = 20;
+            Person person = new Person(name, age); // create an object
             person.SayHello(); // invoke the method
+            person.ChangeName();
+            person.ChangeAge();
             person.Display(); // invoke the method
             ProgramFlow.Looping.Num(); // invoke the method
             ProgramFlow.Looping.Count(); // invoke the method
@@ -65,11 +69,11 @@ namespace ForLoops
         // display the new name and age values
         public void Display()
         {
-            Console.WriteLine("Your new name is: ", name);
-            Console.WriteLine("Your new age is: " + "\n", age);
+            Console.WriteLine("Your new name is: " + name);
+            Console.WriteLine("Your new age is: " + age + "\n" );
         }
 
-        public string a { get; set; } // Property
+    public string a { get; set; } // Property
 
         public void SayHello() // Methode en/of declare a method
         {
