@@ -14,6 +14,8 @@ namespace ForLoops
             {
                 Console.WriteLine("The outcome of i is " + (i + 2));
             }
+            Reference reference = new Reference();
+            Reference.Concatenate();
             String name = "John";
             int age = 20;
             Person person = new Person(name, age); // create an object
@@ -32,6 +34,20 @@ namespace ForLoops
             var c = a + b;
             Console.WriteLine("\n" + "Using method HelloWorld: "+ c);
             Console.ReadLine();
+        }
+    }
+
+    class Reference
+    {
+        public static void Concatenate()
+        {
+            string name = "Susan";
+            name = name + " Smith";
+            Console.WriteLine("\n" + $"Using Concatenate: {name}");
+            Console.WriteLine("\n" + $"Using ToUpper: {name.ToUpper()}");
+            Console.WriteLine($"Using ToLower: {name.ToLower()}");
+            Console.WriteLine($"The lenght of Susan Smith: {name.Length}");
+            Console.ReadKey();
         }
     }
 
@@ -77,7 +93,7 @@ namespace ForLoops
 
         public void SayHello() // Methode en/of declare a method
         {
-            Console.WriteLine("\n" + "Using method SayHello: " + "Hello" + "\n");
+            Console.WriteLine($"\n" + "Using method SayHello: \"Hello\"" + "\n");
         }
 
     }
