@@ -16,6 +16,7 @@ namespace ForLoops
             }
             Reference reference = new Reference();
             Reference.Concatenate();
+            Reference.Trim();
             String name = "John";
             int age = 20;
             Person person = new Person(name, age); // create an object
@@ -44,9 +45,17 @@ namespace ForLoops
             string name = "Susan";
             name = name + " Smith";
             Console.WriteLine("\n" + $"Using Concatenate: {name}");
-            Console.WriteLine("\n" + $"Using ToUpper: {name.ToUpper()}");
-            Console.WriteLine($"Using ToLower: {name.ToLower()}");
+            Console.WriteLine($"Using ToUpper method: {name.ToUpper()}");
+            Console.WriteLine($"Using ToLower method: {name.ToLower()}");
             Console.WriteLine($"The lenght of Susan Smith: {name.Length}");
+            Console.ReadKey();
+        }
+
+        public static void Trim()
+        {
+            String str = "         A good programmer looks both ways before crossing a one-way street. ";
+            Console.WriteLine($"Without trim: {str}");
+            Console.WriteLine($"With trim: {str.Trim()}");
             Console.ReadKey();
         }
     }
