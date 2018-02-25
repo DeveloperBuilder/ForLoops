@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 
 namespace ForLoops
 {
@@ -26,6 +27,7 @@ namespace ForLoops
             person.Display(); // invoke the method
             ProgramFlow.Looping.Num(); // invoke the method
             ProgramFlow.Looping.Count(); // invoke the method
+            ProgramFlow.FlowControl.SwitchStatement();
         }
 
         static void HelloWorld() // Method
@@ -33,7 +35,7 @@ namespace ForLoops
             var a = "Hello ";       // declare and initialize a data type
             var b = "World!";
             var c = a + b;
-            Console.WriteLine("\n" + "Using method HelloWorld: "+ c);
+            Console.WriteLine("\n" + "Using method HelloWorld: " + c);
             Console.ReadLine();
         }
     }
@@ -45,16 +47,16 @@ namespace ForLoops
             string name = "Susan";
             name = name + " Smith";
             Console.WriteLine("\n" + $"Using Concatenate: {name}");
-            Console.WriteLine($"Using ToUpper method: {name.ToUpper()}");
-            Console.WriteLine($"Using ToLower method: {name.ToLower()}");
+            Console.WriteLine("\n" + $"Using ToUpper: {name.ToUpper()}");
+            Console.WriteLine($"Using ToLower: {name.ToLower()}");
             Console.WriteLine($"The lenght of Susan Smith: {name.Length}");
             Console.ReadKey();
         }
 
         public static void Trim()
         {
-            String str = "         A good programmer looks both ways before crossing a one-way street. ";
-            Console.WriteLine($"Without trim: {str}");
+            string str = "      A good programmer looks both ways before crossing a one-way street";
+            Console.WriteLine("\n" + $"Without trim: {str}");
             Console.WriteLine($"With trim: {str.Trim()}");
             Console.ReadKey();
         }
@@ -95,10 +97,10 @@ namespace ForLoops
         public void Display()
         {
             Console.WriteLine($"Your new name is: {name}");
-            Console.WriteLine($"Your new age is: {age}" + "\n" );
+            Console.WriteLine($"Your new age is: {age}" + "\n");
         }
 
-    public string a { get; set; } // Property
+        public string a { get; set; } // Property
 
         public void SayHello() // Methode en/of declare a method
         {
@@ -116,7 +118,7 @@ namespace ProgramFlow
         {
             for (int num = 0; num < 11; num++)
             {
-            Console.WriteLine("The outcome of forloop is " + (num));
+                Console.WriteLine("The outcome of forloop is " + (num));
             }
             Console.ReadLine();
         }
@@ -124,12 +126,33 @@ namespace ProgramFlow
         public static void Count()
         {
             int[] countless = { 231, 385, 395, 898, 1001 };
-            foreach(int count in countless)
+            foreach (int count in countless)
             {
-            Console.WriteLine("The outcome of foreach is " + (count));
+                Console.WriteLine("The outcome of foreach is " + (count));
             }
             Console.ReadLine();
         }
     }
-}
 
+    class FlowControl
+    {
+        public static void SwitchStatement()
+        {
+            int letter = 300;
+            switch (letter)
+            {
+                case 100: Console.WriteLine("The letter is 100");
+                    break;
+                case 200: Console.WriteLine("The letter is 200");
+                    break;
+                case 300: Console.WriteLine("The letter is 300");
+                    break;
+                case 400: Console.WriteLine("The letter is 400");
+                    break;
+                default: Console.WriteLine("The letter is beyond ou scope");
+                    break;
+            }
+            Console.ReadKey();
+        }
+    }
+}
