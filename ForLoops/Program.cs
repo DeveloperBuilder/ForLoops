@@ -116,9 +116,14 @@ namespace ProgramFlow
     {
         public static void Num()
         {
-            for (int num = 0; num < 11; num++)
+            for (int num = 10; num > -1; num--)
             {
-                Console.WriteLine("The outcome of forloop is " + (num));
+                Console.WriteLine("The outcome of forloop Decrement is " + (num));
+            }
+
+            for(int numbs = 0; numbs < 11; numbs++)
+            {
+                Console.WriteLine($"The outcome of forloop Increment is {numbs}");
             }
             Console.ReadLine();
         }
