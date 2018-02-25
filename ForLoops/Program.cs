@@ -28,6 +28,8 @@ namespace ForLoops
             ProgramFlow.Looping.Num(); // invoke the method
             ProgramFlow.Looping.Count(); // invoke the method
             ProgramFlow.FlowControl.SwitchStatement();
+            ProgramFlow.Looping.WhileLoop();
+            ProgramFlow.Looping.DoWhileLoop();
         }
 
         static void HelloWorld() // Method
@@ -114,6 +116,29 @@ namespace ProgramFlow
 {
     class Looping
     {
+        public static void WhileLoop()
+        {
+            int count = 0;
+            while (count <=5)
+            {
+                Console.WriteLine($"The value of WhileLoop is {count}");
+                count++;
+            }
+            Console.ReadLine();
+        }
+
+        public static void DoWhileLoop()
+        {
+            int x = 0;
+            do
+            {
+                Console.WriteLine($"The value of DoWhileLoop is {x}");
+                x++; 
+            }
+            while (x <= 5);
+            Console.ReadLine();
+        }
+
         public static void Num()
         {
             for (int num = 10; num > -1; num--)
