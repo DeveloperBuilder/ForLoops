@@ -20,6 +20,7 @@ namespace ForLoops
             Reference.Trim();
             String name = "John";
             int age = 20;
+            HelloWorld();
             Person person = new Person(name, age); // create an object
             person.SayHello(); // invoke the method
             person.ChangeName();
@@ -32,7 +33,7 @@ namespace ForLoops
             ProgramFlow.Looping.DoWhileLoop();
         }
 
-        static void HelloWorld() // Method
+        protected static void HelloWorld() // Method
         {
             var a = "Hello ";       // declare and initialize a data type
             var b = "World!";
@@ -44,7 +45,7 @@ namespace ForLoops
 
     class Reference
     {
-        public static void Concatenate()
+        internal static void Concatenate()
         {
             string name = "Susan";
             name = name + " Smith";
@@ -55,7 +56,7 @@ namespace ForLoops
             Console.ReadKey();
         }
 
-        public static void Trim()
+        internal static void Trim()
         {
             string str = "      A good programmer looks both ways before crossing a one-way street";
             Console.WriteLine("\n" + $"Without trim: {str}");
@@ -116,7 +117,7 @@ namespace ProgramFlow
 {
     class Looping
     {
-        public static void WhileLoop()
+        internal static void WhileLoop()
         {
             int count = 0;
             while (count <=5)
