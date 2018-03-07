@@ -52,6 +52,11 @@ namespace ForLoops
             string[,,] names = { { { "Willem", "22", "Road" }, { "Max", "33", "HighWay" }, { "Tommy", "17", "Speed" } } };
             Console.WriteLine($"The outcome of Multidimensional Arrays numbers row 2 and colomn 1 is {numbers[1,0]}");
             Console.WriteLine($"The outcome of Three Arrays names is {names[0,2,2]}");
+            numbers[0,1] = 88;
+            foreach(int number in numbers)
+            {
+                Console.WriteLine(number);
+            }
             Console.ReadLine();
         }
     }
