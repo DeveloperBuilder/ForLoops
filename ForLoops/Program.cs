@@ -15,6 +15,7 @@ namespace ForLoops
             {
                 Console.WriteLine("The outcome of i is " + (i + 2));
             }
+            RetangleArray.Array();
             Reference reference = new Reference();
             Reference.Concatenate();
             Reference.Trim();
@@ -43,6 +44,17 @@ namespace ForLoops
         }
     }
 
+    class RetangleArray
+    {
+        public static void Array()
+        {
+            int[,] numbers = { { 17, 66 }, { 34, 57 } };
+            string[,,] names = { { { "Willem", "22", "Road" }, { "Max", "33", "HighWay" }, { "Tommy", "17", "Speed" } } };
+            Console.WriteLine($"The outcome of Multidimensional Arrays numbers row 2 and colomn 1 is {numbers[1,0]}");
+            Console.WriteLine($"The outcome of Three Arrays names is {names[0,2,2]}");
+            Console.ReadLine();
+        }
+    }
     class Reference
     {
         internal static void Concatenate()
@@ -180,7 +192,7 @@ namespace ProgramFlow
                     break;
                 case 400: Console.WriteLine("The letter is 400");
                     break;
-                default: Console.WriteLine("The letter is beyond ou scope");
+                default: Console.WriteLine("The letter is beyond our scope");
                     break;
             }
             Console.ReadKey();
